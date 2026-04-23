@@ -137,7 +137,7 @@ export async function GetLayoutServerData(cookies: Cookies, request: Request): P
     canSendEmail,
     announcement: siteData.announcement,
     eventDisplaySettings: siteData.eventDisplaySettings || seedSiteData.eventDisplaySettings,
-    socialPreviewImage: siteData.socialPreviewImage,
+    socialPreviewImage: siteData.socialPreviewImage?.startsWith("http") ? siteData.socialPreviewImage : "https://cdn.krack.ing/kracking-assets/og-image.png",
     customCSS: siteData.customCSS,
     globalPageVisibilitySettings: siteData.globalPageVisibilitySettings || seedSiteData.globalPageVisibilitySettings,
     dateAndTimeFormat: siteData.dateAndTimeFormat || seedSiteData.dateAndTimeFormat,
