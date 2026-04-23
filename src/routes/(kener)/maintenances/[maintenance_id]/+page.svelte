@@ -47,8 +47,9 @@
     <meta name="description" content={data.maintenance.description} />
     <meta property="og:description" content={data.maintenance.description} />
   {/if}
-  <meta property="og:image" content={data.socialPreviewImage?.startsWith('http') ? data.socialPreviewImage : data.socialPreviewImage ? clientResolver(resolve, data.socialPreviewImage) : 'https://cdn.krack.ing/kracking-assets/og-image.png'} />
-  <meta name="twitter:image" content={data.socialPreviewImage?.startsWith('http') ? data.socialPreviewImage : data.socialPreviewImage ? clientResolver(resolve, data.socialPreviewImage) : 'https://cdn.krack.ing/kracking-assets/og-image.png'} />
+  {@const ogImage = data.socialPreviewImage ? (data.socialPreviewImage.startsWith('http') ? data.socialPreviewImage : `${(data.siteUrl || '').replace(/\/$/, '')}${data.socialPreviewImage.startsWith('/') ? '' : '/'}${data.socialPreviewImage}`) : 'https://cdn.krack.ing/kracking-assets/og-image.png'}
+  <meta property="og:image" content={ogImage} />
+  <meta name="twitter:image" content={ogImage} />
 </svelte:head>
 
 <div class="public-page">

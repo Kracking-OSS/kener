@@ -160,8 +160,9 @@
   <meta property="og:description" content={`${currentMonth} maintenances and incidents for ${data.siteName}`} />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content={data.socialPreviewImage?.startsWith('http') ? data.socialPreviewImage : data.socialPreviewImage ? clientResolver(resolve, data.socialPreviewImage) : 'https://cdn.krack.ing/kracking-assets/og-image.png'} />
-  <meta name="twitter:image" content={data.socialPreviewImage?.startsWith('http') ? data.socialPreviewImage : data.socialPreviewImage ? clientResolver(resolve, data.socialPreviewImage) : 'https://cdn.krack.ing/kracking-assets/og-image.png'} />
+  {@const ogImage = data.socialPreviewImage ? (data.socialPreviewImage.startsWith('http') ? data.socialPreviewImage : `${(data.siteUrl || '').replace(/\/$/, '')}${data.socialPreviewImage.startsWith('/') ? '' : '/'}${data.socialPreviewImage}`) : 'https://cdn.krack.ing/kracking-assets/og-image.png'}
+  <meta property="og:image" content={ogImage} />
+  <meta name="twitter:image" content={ogImage} />
 </svelte:head>
 
 <div class="public-page">
