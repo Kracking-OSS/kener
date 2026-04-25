@@ -77,7 +77,7 @@
 <svelte:head>
   <meta name="robots" content="noindex, nofollow" />
   <title>{pageTitle} | Kener</title>
-  <link rel="icon" href="https://cdn.krack.ing/kracking-assets/favicon.png" />
+  <link rel="icon" href="https://cdn.zirel.net/zirel-assets/favicon.png" />
   {#if data.font?.cssSrc}
     <link rel="stylesheet" href={data.font.cssSrc} />
   {/if}

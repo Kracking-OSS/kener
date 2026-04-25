@@ -17,10 +17,10 @@
 <Toaster />
 
 <svelte:head>
-  <link rel="icon" href={data.favicon || 'https://cdn.krack.ing/kracking-assets/favicon.png'} type="image/png" />
-  <link rel="apple-touch-icon" href={data.favicon || 'https://cdn.krack.ing/kracking-assets/favicon.png'} />
+  <link rel="icon" href={data.favicon || 'https://cdn.zirel.net/zirel-assets/favicon.png'} type="image/png" />
+  <link rel="apple-touch-icon" href={data.favicon || 'https://cdn.zirel.net/zirel-assets/favicon.png'} />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
-  <meta name="author" content="Kracking Technologies LLC" />
+  <meta name="author" content="Zirel Technologies LLC" />
   {@html `
 	<style id="dynamic-styles">
 		body {

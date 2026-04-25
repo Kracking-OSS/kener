@@ -15,7 +15,7 @@
 <svelte:head>
   <meta name="robots" content="noindex, nofollow" />
   <title>Kener Status</title>
-  <link rel="icon" href={data.favicon || 'https://cdn.krack.ing/kracking-assets/favicon.png'} type="image/png" />
+  <link rel="icon" href={data.favicon || 'https://cdn.zirel.net/zirel-assets/favicon.png'} type="image/png" />
   {#if data.font?.cssSrc}
     <link rel="stylesheet" href={data.font.cssSrc} />
   {/if}

@@ -348,7 +348,7 @@
                 </div>
                 <div class="flex items-center justify-between">
                   <div class="flex items-center gap-2">
-                    <Wrench class="h-4 w-4 text-blue-500" />
+                    <Wrench class="h-4 w-4 text-red-500" />
                     <Label for="enable-email-maintenances" class="mb-0">Maintenance Updates</Label>
                   </div>
                   <Switch
@@ -401,7 +401,7 @@
               </Table.Head>
               <Table.Head class="text-center">
                 <div class="flex items-center justify-center gap-1">
-                  <Wrench class="h-4 w-4 text-blue-500" />
+                  <Wrench class="h-4 w-4 text-red-500" />
                   Maintenances
                 </div>
               </Table.Head>
@@ -528,7 +528,7 @@
         </div>
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-2">
-            <Wrench class="h-4 w-4 text-blue-500" />
+            <Wrench class="h-4 w-4 text-red-500" />
             <Label for="new-maintenances" class="mb-0">Subscribe to Maintenances</Label>
           </div>
           <Switch id="new-maintenances" bind:checked={newMaintenances} disabled={addingSubscriber} />

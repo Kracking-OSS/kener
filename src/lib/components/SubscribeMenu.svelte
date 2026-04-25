@@ -400,7 +400,7 @@
             {#if availableSubscriptions.maintenances}
               <div class="flex items-center justify-between gap-3">
                 <div class="flex min-w-0 items-center gap-3">
-                  <div class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-blue-500/10 text-blue-300">
+                  <div class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-red-500/10 text-red-300">
                     <Wrench class="size-4" />
                   </div>
                   <div class="min-w-0">
@@ -429,7 +429,7 @@
         <Button
           onclick={handleLogin}
           disabled={isSubmitting}
-          class="h-8 w-full rounded-lg bg-blue-600 px-2.5 text-[13px] font-medium leading-none text-white hover:bg-blue-500 disabled:opacity-60"
+          class="h-8 w-full rounded-lg bg-red-600 px-2.5 text-[13px] font-medium leading-none text-white hover:bg-red-500 disabled:opacity-60"
         >
           {#if isSubmitting}
             <Loader2 class="mr-2 size-4 animate-spin" />
@@ -454,7 +454,7 @@
           <Button
             onclick={handleVerifyOTP}
             disabled={isSubmitting || otpValue.length !== 6}
-            class="h-8 flex-1 rounded-lg bg-blue-600 px-2.5 text-[13px] font-medium leading-none text-white hover:bg-blue-500 disabled:opacity-60"
+            class="h-8 flex-1 rounded-lg bg-red-600 px-2.5 text-[13px] font-medium leading-none text-white hover:bg-red-500 disabled:opacity-60"
           >
             {#if isSubmitting}
               <Loader2 class="mr-2 size-4 animate-spin" />

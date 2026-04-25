@@ -18,7 +18,7 @@ let seedMonitorData = [
     tag: "earth",
     name: "Earth - Planet 3",
     description: "Earth is the 3rd planet in our solar system and it is the most majestic one. ",
-    image: "https://cdn.krack.ing/kracking-assets/earth.png",
+    image: "https://cdn.zirel.net/zirel-assets/earth.png",
     cron: "* * * * *",
     default_status: "UP",
     status: "ACTIVE",

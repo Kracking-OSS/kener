@@ -135,22 +135,22 @@
     <meta property="og:description" content={data.pageDetails.page_header} />
     <meta name="twitter:description" content={data.pageDetails.page_header} />
   {:else}
-    <meta name="description" content={"Real-time status and uptime monitoring for " + (data.siteName || "Kracking") + " services."} />
-    <meta property="og:description" content={"Real-time status and uptime monitoring for " + (data.siteName || "Kracking") + " services."} />
-    <meta name="twitter:description" content={"Real-time status and uptime monitoring for " + (data.siteName || "Kracking") + " services."} />
+    <meta name="description" content={"Real-time status and uptime monitoring for " + (data.siteName || "Zirel") + " services."} />
+    <meta property="og:description" content={"Real-time status and uptime monitoring for " + (data.siteName || "Zirel") + " services."} />
+    <meta name="twitter:description" content={"Real-time status and uptime monitoring for " + (data.siteName || "Zirel") + " services."} />
   {/if}
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content={data.siteName || "Kracking Status"} />
+  <meta property="og:site_name" content={data.siteName || "Zirel Status"} />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@kracking" />
-  {@const ogImage = data.socialPagePreviewImage ? (data.socialPagePreviewImage.startsWith('http') ? data.socialPagePreviewImage : `${(data.siteUrl || '').replace(/\/$/, '')}${data.socialPagePreviewImage.startsWith('/') ? '' : '/'}${data.socialPagePreviewImage}`) : 'https://cdn.krack.ing/kracking-assets/og-image.png'}
+  <meta name="twitter:site" content="@zirel" />
+  {@const ogImage = data.socialPagePreviewImage ? (data.socialPagePreviewImage.startsWith('http') ? data.socialPagePreviewImage : `${(data.siteUrl || '').replace(/\/$/, '')}${data.socialPagePreviewImage.startsWith('/') ? '' : '/'}${data.socialPagePreviewImage}`) : 'https://cdn.zirel.net/zirel-assets/og-image.png'}
   <meta property="og:image" content={ogImage} />
   <meta property="og:image:width" content="1920" />
   <meta property="og:image:height" content="1080" />
   <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:alt" content={"Status page for " + (data.siteName || "Kracking")} />
+  <meta property="og:image:alt" content={"Status page for " + (data.siteName || "Zirel")} />
   <meta name="twitter:image" content={ogImage} />
-  <meta name="twitter:image:alt" content={"Status page for " + (data.siteName || "Kracking")} />
+  <meta name="twitter:image:alt" content={"Status page for " + (data.siteName || "Zirel")} />
 </svelte:head>
 
 <!-- page title -->

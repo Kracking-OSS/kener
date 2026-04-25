@@ -161,17 +161,17 @@
   <meta property="og:description" content={`${currentMonth} maintenances and incidents for ${data.siteName}`} />
   <meta name="twitter:description" content={`${currentMonth} maintenances and incidents for ${data.siteName}`} />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content={data.siteName || "Kracking Status"} />
+  <meta property="og:site_name" content={data.siteName || "Zirel Status"} />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@kracking" />
-  {@const ogImage = data.socialPreviewImage ? (data.socialPreviewImage.startsWith('http') ? data.socialPreviewImage : `${(data.siteUrl || '').replace(/\/$/, '')}${data.socialPreviewImage.startsWith('/') ? '' : '/'}${data.socialPreviewImage}`) : 'https://cdn.krack.ing/kracking-assets/og-image.png'}
+  <meta name="twitter:site" content="@zirel" />
+  {@const ogImage = data.socialPreviewImage ? (data.socialPreviewImage.startsWith('http') ? data.socialPreviewImage : `${(data.siteUrl || '').replace(/\/$/, '')}${data.socialPreviewImage.startsWith('/') ? '' : '/'}${data.socialPreviewImage}`) : 'https://cdn.zirel.net/zirel-assets/og-image.png'}
   <meta property="og:image" content={ogImage} />
   <meta property="og:image:width" content="1920" />
   <meta property="og:image:height" content="1080" />
   <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:alt" content={`${currentMonth} events for ${data.siteName || "Kracking"}`} />
+  <meta property="og:image:alt" content={`${currentMonth} events for ${data.siteName || "Zirel"}`} />
   <meta name="twitter:image" content={ogImage} />
-  <meta name="twitter:image:alt" content={`${currentMonth} events for ${data.siteName || "Kracking"}`} />
+  <meta name="twitter:image:alt" content={`${currentMonth} events for ${data.siteName || "Zirel"}`} />
 </svelte:head>
 
 <div class="public-page">

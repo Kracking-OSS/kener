@@ -389,7 +389,7 @@
         {#if !canSendEmail}
           <p class="text-muted-foreground max-w-xs text-xs">
             Email service not configured. Cannot invite new users. Please go to
-            <a href={`${GC.DOCS_URL}/setup/email-setup`} target="_blank" class="text-blue-500 underline">
+            <a href={`${GC.DOCS_URL}/setup/email-setup`} target="_blank" class="text-red-500 underline">
               setup email
             </a>
             for more info.
@@ -440,7 +440,7 @@
               <Table.Cell>{user.email}</Table.Cell>
               <Table.Cell class="text-center">
                 {#if user.is_verified}
-                  <CheckCheckIcon class="mx-auto h-4 w-4 text-blue-500" />
+                  <CheckCheckIcon class="mx-auto h-4 w-4 text-red-500" />
                 {:else}
                   <MailWarningIcon class="mx-auto h-4 w-4 text-yellow-500" />
                 {/if}

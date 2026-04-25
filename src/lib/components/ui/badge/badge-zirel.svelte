@@ -30,7 +30,7 @@
 
   const toneClassNames: Record<BadgeTone, string> = {
     amber: "bg-amber-500/10 text-amber-300",
-    blue: "bg-blue-500/10 text-blue-300",
+    blue: "bg-red-500/10 text-red-300",
     emerald: "bg-emerald-500/10 text-emerald-300",
     red: "bg-red-500/10 text-red-300",
     rose: "bg-rose-500/10 text-rose-300",

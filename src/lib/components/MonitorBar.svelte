@@ -44,7 +44,7 @@
 
 <script lang="ts">
   import { Skeleton } from "$lib/components/ui/skeleton/index.js";
-  import { KrackingBadge } from "$lib/components/ui/badge";
+  import { ZirelBadge } from "$lib/components/ui/badge";
   import StatusBarCalendar from "$lib/components/StatusBarCalendar.svelte";
   import type { MonitorBarResponse } from "$lib/server/api-server/monitor-bar/get.js";
   import { formatDate } from "$lib/stores/datetime";
@@ -128,9 +128,9 @@
       </div>
 
       <div class="flex shrink-0 items-center gap-3">
-        <KrackingBadge tone={statusBadgeTone(data.currentStatus)}>
+        <ZirelBadge tone={statusBadgeTone(data.currentStatus)}>
           {statusDisplayLabel(data.currentStatus, $t)}
-        </KrackingBadge>
+        </ZirelBadge>
         <div class="flex flex-col items-end gap-0.5 text-right">
           <span class={grid ? "text-[13px] font-medium leading-5 text-zinc-100" : "text-sm font-medium leading-5 text-zinc-100"}>
             {data.uptime}%

@@ -43,22 +43,22 @@
   <meta property="og:title" content={data.maintenance.title + " | " + data.siteName} />
   <meta name="twitter:title" content={data.maintenance.title + " | " + data.siteName} />
   <meta property="og:type" content="article" />
-  <meta property="og:site_name" content={data.siteName || "Kracking Status"} />
+  <meta property="og:site_name" content={data.siteName || "Zirel Status"} />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@kracking" />
+  <meta name="twitter:site" content="@zirel" />
   {#if data.maintenance.description}
     <meta name="description" content={data.maintenance.description} />
     <meta property="og:description" content={data.maintenance.description} />
     <meta name="twitter:description" content={data.maintenance.description} />
   {/if}
-  {@const ogImage = data.socialPreviewImage ? (data.socialPreviewImage.startsWith('http') ? data.socialPreviewImage : `${(data.siteUrl || '').replace(/\/$/, '')}${data.socialPreviewImage.startsWith('/') ? '' : '/'}${data.socialPreviewImage}`) : 'https://cdn.krack.ing/kracking-assets/og-image.png'}
+  {@const ogImage = data.socialPreviewImage ? (data.socialPreviewImage.startsWith('http') ? data.socialPreviewImage : `${(data.siteUrl || '').replace(/\/$/, '')}${data.socialPreviewImage.startsWith('/') ? '' : '/'}${data.socialPreviewImage}`) : 'https://cdn.zirel.net/zirel-assets/og-image.png'}
   <meta property="og:image" content={ogImage} />
   <meta property="og:image:width" content="1920" />
   <meta property="og:image:height" content="1080" />
   <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:alt" content={data.maintenance.title + " — " + (data.siteName || "Kracking")} />
+  <meta property="og:image:alt" content={data.maintenance.title + " — " + (data.siteName || "Zirel")} />
   <meta name="twitter:image" content={ogImage} />
-  <meta name="twitter:image:alt" content={data.maintenance.title + " — " + (data.siteName || "Kracking")} />
+  <meta name="twitter:image:alt" content={data.maintenance.title + " — " + (data.siteName || "Zirel")} />
 </svelte:head>
 
 <div class="public-page">

@@ -1,6 +1,6 @@
 @import "../lib/assets/fonts.css";
 
-.kracking-public-shell {
+.zirel-public-shell {
   font-family:
     "Inter",
     system-ui,
@@ -10,8 +10,8 @@
     sans-serif;
 }
 
-.kracking-public-shell,
-.kracking-public-shell body {
+.zirel-public-shell,
+.zirel-public-shell body {
   overflow-x: hidden;
 }
 
@@ -19,36 +19,36 @@
    Scoped to html:not(.dark) so they never affect dark mode.
    Values are hardcoded hex — independent of Kener's shadcn CSS variable
    system and the inverted Tailwind palette used by Console / Marketing.     */
-html:not(.dark) .kracking-public-shell {
+html:not(.dark) .zirel-public-shell {
   background-color: #ffffff;
   color: #18181b;
 }
 
 /* Outer card shell */
-html:not(.dark) .kracking-public-shell section.overflow-hidden.bg-zinc-900\/20 {
+html:not(.dark) .zirel-public-shell section.overflow-hidden.bg-zinc-900\/20 {
   background-color: #f9f9fa !important;
   border-color: #e4e4e7 !important;
 }
 
 /* Inner card shell (bg-zinc-950/60) */
-html:not(.dark) .kracking-public-shell .bg-zinc-950\/60 {
+html:not(.dark) .zirel-public-shell .bg-zinc-950\/60 {
   background-color: #ffffff !important;
   border-color: #e4e4e7 !important;
 }
 
 /* Row dividers & borders */
-html:not(.dark) .kracking-public-shell .divide-zinc-800 > * + * {
+html:not(.dark) .zirel-public-shell .divide-zinc-800 > * + * {
   border-color: #e4e4e7 !important;
 }
-html:not(.dark) .kracking-public-shell .border-zinc-800 {
+html:not(.dark) .zirel-public-shell .border-zinc-800 {
   border-color: #e4e4e7 !important;
 }
-html:not(.dark) .kracking-public-shell .border-zinc-900 {
+html:not(.dark) .zirel-public-shell .border-zinc-900 {
   border-color: #e4e4e7 !important;
 }
 
 /* Section header label text (text-zinc-400 inside the card headers) */
-html:not(.dark) .kracking-public-shell .text-zinc-500 {
+html:not(.dark) .zirel-public-shell .text-zinc-500 {
   color: #71717a !important;
 }
 
@@ -58,33 +58,33 @@ html:not(.dark) .kracking-public-shell .text-zinc-500 {
    bg-zinc-900/20. We use the 'px-4' class as a proxy for MonitorBar rows.  */
 
 /* Monitor name / primary heading inside rows */
-html:not(.dark) .kracking-public-shell .bg-zinc-950\/60 .text-zinc-100,
-html:not(.dark) .kracking-public-shell .bg-zinc-900\/20 > div > .text-zinc-100 {
+html:not(.dark) .zirel-public-shell .bg-zinc-950\/60 .text-zinc-100,
+html:not(.dark) .zirel-public-shell .bg-zinc-900\/20 > div > .text-zinc-100 {
   color: #18181b !important;
 }
 
 /* Monitor description */
-html:not(.dark) .kracking-public-shell .bg-zinc-950\/60 .text-zinc-400 {
+html:not(.dark) .zirel-public-shell .bg-zinc-950\/60 .text-zinc-400 {
   color: #52525b !important;
 }
 
 /* Separator dots and tertiary text */
-html:not(.dark) .kracking-public-shell .bg-zinc-950\/60 .text-zinc-600 {
+html:not(.dark) .zirel-public-shell .bg-zinc-950\/60 .text-zinc-600 {
   color: #a1a1aa !important;
 }
 
 /* Date range labels at bottom of monitor bars */
-html:not(.dark) .kracking-public-shell .bg-zinc-950\/60 .text-zinc-500 {
+html:not(.dark) .zirel-public-shell .bg-zinc-950\/60 .text-zinc-500 {
   color: #71717a !important;
 }
 
 /* Bold uptime percentage */
-html:not(.dark) .kracking-public-shell .bg-zinc-950\/60 .text-zinc-300 {
+html:not(.dark) .zirel-public-shell .bg-zinc-950\/60 .text-zinc-300 {
   color: #3f3f46 !important;
 }
 
 /* All Systems Operational text inside rows */
-html:not(.dark) .kracking-public-shell .bg-zinc-950\/60 .text-zinc-300.font-medium {
+html:not(.dark) .zirel-public-shell .bg-zinc-950\/60 .text-zinc-300.font-medium {
   color: #18181b !important;
 }
 
@@ -95,33 +95,33 @@ html:not(.dark) .kracking-public-shell .bg-zinc-950\/60 .text-zinc-300.font-medi
    identity rather than disappearing into the page. Scoped to the public
    shell so the embed surfaces (which reuse the same components) inherit
    automatically.                                                          */
-html:not(.dark) .kracking-public-shell .bg-zinc-950\/60 {
+html:not(.dark) .zirel-public-shell .bg-zinc-950\/60 {
   background-color: #fafafa !important;
   border-color: #e4e4e7 !important;
 }
 
 /* Card-header text inside detail pages ("Updates (N)", "Affected Monitors") */
-html:not(.dark) .kracking-public-shell .text-zinc-300 {
+html:not(.dark) .zirel-public-shell .text-zinc-300 {
   color: #3f3f46 !important;
 }
-html:not(.dark) .kracking-public-shell .text-zinc-200 {
+html:not(.dark) .zirel-public-shell .text-zinc-200 {
   color: #27272a !important;
 }
-html:not(.dark) .kracking-public-shell .text-zinc-400 {
+html:not(.dark) .zirel-public-shell .text-zinc-400 {
   color: #52525b !important;
 }
-html:not(.dark) .kracking-public-shell .text-zinc-700 {
+html:not(.dark) .zirel-public-shell .text-zinc-700 {
   color: #d4d4d8 !important;
 }
 
 /* Icon-only pagination buttons in the events page */
-html:not(.dark) .kracking-public-shell .border-zinc-800 {
+html:not(.dark) .zirel-public-shell .border-zinc-800 {
   border-color: #e4e4e7 !important;
 }
-html:not(.dark) .kracking-public-shell .bg-zinc-900 {
+html:not(.dark) .zirel-public-shell .bg-zinc-900 {
   background-color: #f4f4f5 !important;
 }
-html:not(.dark) .kracking-public-shell .hover\:bg-zinc-900:hover {
+html:not(.dark) .zirel-public-shell .hover\:bg-zinc-900:hover {
   background-color: #f4f4f5 !important;
 }
 

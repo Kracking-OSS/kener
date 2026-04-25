@@ -1,13 +1,13 @@
 /**
- * Central helper for referencing Kracking brand assets served from
- * the shared CDN at `cdn.krack.ing/kracking-assets/*`.
+ * Central helper for referencing Zirel brand assets served from
+ * the shared CDN at `cdn.zirel.net/zirel-assets/*`.
  *
- * All four Kracking surfaces (Marketing, Docs, Console, Kener) point
+ * All four Zirel surfaces (Marketing, Docs, Console, Kener) point
  * at the same replicated bucket so a brand refresh is a single upload
  * rather than four repo commits.
  */
 
-const CDN_BASE_URL = "https://cdn.krack.ing/kracking-assets";
+const CDN_BASE_URL = "https://cdn.zirel.net/zirel-assets";
 
 export function cdnAsset(filename: string): string {
 	return `${CDN_BASE_URL}/${filename.replace(/^\//, "")}`;

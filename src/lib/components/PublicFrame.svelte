@@ -1,9 +1,9 @@
 <script lang="ts">
-  // Kracking-branded banner served from the shared CDN so a brand
-  // refresh is a single upload to the `kracking-assets` bucket
+  // Zirel-branded banner served from the shared CDN so a brand
+  // refresh is a single upload to the `zirel-assets` bucket
   // rather than another commit to this fork.
-  const bannerDark = "https://cdn.krack.ing/kracking-assets/banner.png";
-  const bannerLight = "https://cdn.krack.ing/kracking-assets/banner-light.png";
+  const bannerDark = "https://cdn.zirel.net/zirel-assets/banner.png";
+  const bannerLight = "https://cdn.zirel.net/zirel-assets/banner-light.png";
   import { page } from "$app/state";
   import { resolve } from "$app/paths";
   import clientResolver from "$lib/client/resolver.js";
@@ -19,14 +19,14 @@
   const year = new Date().getFullYear();
 </script>
 
-<div class="kracking-public-shell min-h-screen dark:bg-zinc-950 bg-white dark:text-zinc-50 text-zinc-900">
+<div class="zirel-public-shell min-h-screen dark:bg-zinc-950 bg-white dark:text-zinc-50 text-zinc-900">
   <div class="mx-auto flex min-h-screen w-full max-w-[1126px] flex-col">
     <section class="flex flex-1 flex-col px-6 py-6 md:px-10 md:py-8">
 
       <div class="mx-auto flex w-full max-w-5xl items-center justify-start">
         <a href={clientResolver(resolve, "/")} class="flex items-center gap-3">
-          <img src={bannerDark}  alt="Kracking" class="h-9 w-auto object-contain md:h-10 hidden dark:block" fetchpriority="high" decoding="async" />
-          <img src={bannerLight} alt="Kracking" class="h-9 w-auto object-contain md:h-10 block  dark:hidden" fetchpriority="high" decoding="async" />
+          <img src={bannerDark}  alt="Zirel" class="h-9 w-auto object-contain md:h-10 hidden dark:block" fetchpriority="high" decoding="async" />
+          <img src={bannerLight} alt="Zirel" class="h-9 w-auto object-contain md:h-10 block  dark:hidden" fetchpriority="high" decoding="async" />
         </a>
       </div>
 
@@ -42,7 +42,7 @@
         <div class="mb-4 flex justify-center">
           <a
             href={clientResolver(resolve, "/manage/app/site-configurations")}
-            class="text-sm font-medium dark:text-zinc-300 text-zinc-600 underline underline-offset-4 transition-colors hover:text-blue-500"
+            class="text-sm font-medium dark:text-zinc-300 text-zinc-600 underline underline-offset-4 transition-colors hover:text-red-500"
           >
             Manage Site
           </a>
@@ -54,7 +54,7 @@
         </div>
       {:else}
         <div class="flex justify-center text-center text-sm dark:text-zinc-500 text-zinc-400">
-          <p>&copy; {year} Kracking Technologies LLC. All rights reserved.</p>
+          <p>&copy; {year} Zirel Technologies LLC. All rights reserved.</p>
         </div>
       {/if}
     </footer>

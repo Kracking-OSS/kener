@@ -9,7 +9,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /* ── Console shadow tokens ─────────────────────────────────────
-   Mirror Kracking Console's shadow scale so dropdowns / dialogs /
+   Mirror Zirel Console's shadow scale so dropdowns / dialogs /
    card rings read identically across both apps. Values match
    `apps/web/src/routes/layout.css` in the Console repo. Used by
    the public surfaces via `shadow-(--shadow-dropdown)` etc.     */

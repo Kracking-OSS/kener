@@ -155,12 +155,12 @@
   <meta property="og:description" content={data.description || `Documentation for ${data.title}`} />
   <meta property="og:type" content="article" />
   <meta property="og:url" content={`https://kener.ing/docs/${data.slug}`} />
-  <meta property="og:logo" content="https://cdn.krack.ing/kracking-assets/favicon.png" />
-  <meta property="og:image" content="https://cdn.krack.ing/kracking-assets/og-image.png" />
+  <meta property="og:logo" content="https://cdn.zirel.net/zirel-assets/favicon.png" />
+  <meta property="og:image" content="https://cdn.zirel.net/zirel-assets/og-image.png" />
   <meta name="twitter:title" content="{data.title} | Documentation" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:description" content={data.description || `Documentation for ${data.title}`} />
-  <meta name="twitter:image" content="https://cdn.krack.ing/kracking-assets/og-image.png" />
+  <meta name="twitter:image" content="https://cdn.zirel.net/zirel-assets/og-image.png" />
   {@html `<script type="application/ld+json">${JSON.stringify({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

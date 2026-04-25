@@ -226,8 +226,8 @@
       <!-- Request Reset View -->
       {#if emailSent}
         <Card.Header class="text-center">
-          <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-100">
-            <MailIcon class="h-8 w-8 text-blue-600" />
+          <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-red-100">
+            <MailIcon class="h-8 w-8 text-red-600" />
           </div>
           <Card.Title>Check Your Email</Card.Title>
           <Card.Description>
